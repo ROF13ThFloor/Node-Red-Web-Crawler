@@ -45,7 +45,7 @@ driver = webdriver.Chrome(service=ChromeService(
  
 
 
-for i in range(1,2):
+for i in range(1,100):
     driver.get(url+str(i)) 
     time.sleep(8)
     elements = driver.find_elements(By.XPATH ,"//a[@href]")
